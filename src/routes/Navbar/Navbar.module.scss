@@ -1,0 +1,45 @@
+.navMain {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline:40px;
+  position: absolute;
+  z-index: 99;
+  top:0;
+  right:0;
+  width: 100vw;
+  // border:1px solid red;
+
+  img {
+    height: 25px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0;
+
+    .unclickedStyle{
+      text-decoration:none;
+      color:white;
+      font-size:15px;
+      font-weight:500;
+    }
+
+    .clickedStyle{
+        text-decoration:none;
+        color:red;
+       font-size:15px;
+       font-weight:500; 
+    }
+
+    li {
+      
+      margin-inline: 10px;
+      
+    }
+  }
+}

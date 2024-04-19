@@ -1,0 +1,22 @@
+.heroMain {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid green;
+  
+    background-image: url("../../../assets/heroSectionImg.jpg");
+    background-position:center;
+    background-size:cover;
+  
+    h1 {
+      margin-bottom: 10px;
+      color: black;
+    }
+  
+    h3 {
+      color: black;
+    }
+  }
+  

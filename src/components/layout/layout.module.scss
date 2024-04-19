@@ -1,0 +1,61 @@
+.loaderDiv {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .lineOne {
+      animation: blink 1.5s ease-in-out infinite;
+    }
+  
+    .lineFour, .lineTwo, .lineThree{
+      height:150px;
+      margin-inline: 10px;
+    
+    }
+  
+    .lineTwo{
+      animation: threeLine 2s ease-in-out 0.5s forwards;
+    }
+  
+    .lineThree{
+      animation: threeLine 2s ease-in-out 0.8s forwards;
+    }
+  
+    .lineFour{
+      animation: threeLine 2s ease-in-out 1.1s forwards;
+      
+    }
+  
+  
+  
+  }
+  
+  
+  
+  
+  // animation for the three line to be appeared first of the big line 
+  @keyframes threeLine{
+    0%{
+      display:none;
+      transform: translateX(-600px);
+    }
+    100%{
+      display:block;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  // following animaiton is for the blinkking effect 
+  @keyframes blink{
+    0%{
+    opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1 ;
+    }
+  }

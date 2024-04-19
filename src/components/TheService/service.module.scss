@@ -1,0 +1,15 @@
+.mainDiv{
+    min-height: 30vh;
+    border:2px solid blue;
+
+    .leftDiv{
+        height:30vh;
+    }
+
+    .rightDiv{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+}
