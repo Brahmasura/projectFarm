@@ -22,18 +22,26 @@ const Hero = () => {
 
 
     // creating text timeline
-    words.forEach((word) => {
+    words.forEach((word, index) => {
       let textTimeline = gsap.timeline({
         repeat: 1,
         yoyo: true,
-        repeatDelay:6
+        repeatDelay:3
       });
 
-      textTimeline.to(textRef.current, {
+      // textTimeline.to(textRef.current, {
+      //   text: word,
+      //   duration: 1,
+      // });
+
+      textTimeline.fromTo(textRef.current, {
+        text: "",
+        color: "white", // Starting color
+      }, {
         text: word,
         duration: 1,
+        color: `hsl(${(index * 50) % 360}, 100%, 50%)`, // Changing color based on index
       });
-
       mainTimeline.add(textTimeline);
     });
 
