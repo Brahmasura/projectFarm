@@ -9,7 +9,7 @@ import { LinkProvider } from "./Context/LinkContext/LinkContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/projectFarm">
+    <BrowserRouter>
       <LinkProvider>
         <App />
       </LinkProvider>
