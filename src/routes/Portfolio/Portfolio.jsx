@@ -21,11 +21,8 @@ const Portfolio = () => {
 
   return (
     <div className={style.contactDiv}>
-      
-
       <form onSubmit={handleSubmit}>
-
-      <h3>Login</h3>
+        <h3>Login</h3>
         <div className={style.nameDiv}>
           {/* name */}
           <input
