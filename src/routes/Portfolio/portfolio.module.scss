@@ -8,13 +8,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  padding-right: 17vw;
 
-  h3 {
-    text-align: center;
-    color: black;
-    font-size: 3vw;
-  }
 
   form {
     padding: 20px;
@@ -22,12 +18,19 @@
     // width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 
     // label {
     //   margin-top: 30px;
     // }
+
+    
+  h3 {
+    text-align: center;
+    color: black;
+    font-size: 3vw;
+  }
 
     input {
       width: 22vw;
