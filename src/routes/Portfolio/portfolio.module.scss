@@ -1,42 +1,96 @@
 .contactDiv {
   border: 2px solid red;
   padding: 20px;
+  height: 80vh;
+  background: url("../../assets/Portfolio/loginBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h3 {
     text-align: center;
+    color: black;
+    font-size: 3vw;
   }
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   form {
     padding: 20px;
-    border: 1px solid black;
-    width: 300px;
+    // border: 1px solid black;
+    // width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 
-    label {
-      margin-top: 30px;
+    // label {
+    //   margin-top: 30px;
+    // }
+
+    input {
+      width: 22vw;
+      height: 6vh;
+      border-radius: 5vw;
+      background: linear-gradient(0deg, #0d0c0c69 100%, transparent);
+      border: none;
+      margin: 2vh 0;
+      padding-left: 5vw;
+      padding-top:1vh;
+
+      &::placeholder{
+        font-size:1.5vw;
+        margin-bottom:0;
+        color:#fffdfc;
+      }
+    }
+
+    .nameDiv {
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 2vw;
+        top: 3vh;
+        left: 1.3vw;
+      }
+    }
+
+    .pwdDiv {
+      position: relative;
+      img {
+        position: absolute;
+        width: 2vw;
+        top: 3vh;
+        left: 1.3vw;
+      }
     }
 
     button {
-      margin-top: 20px;
-      width: 80px;
-      border: 1px solid red;
+      margin-top: 2vh;
+      width: 22vw;
+      height: 6vh;
+      border-radius: 5vw;
+      background: #0001013b;
+      font-size: 1.2vw;
+      border: none;
     }
 
-    p{
-      margin:10px 0 0 0;
+    p {
+      margin: 10px 0 0 0;
       text-align: center;
+      color:#fffdfc;
+      font-size: 1vw;
     }
 
-    .signUpButton{
-      margin-top:0;
+    .signUpButton {
+      margin-top: 2vh;
+      width: 10vw;
+      height: 6vh;
+      border-radius: 5vw;
+      background: #0001013b;
+      border: none;
     }
-
   }
 }

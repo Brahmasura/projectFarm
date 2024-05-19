@@ -1,15 +1,26 @@
-.mainDiv{
-    min-height: 30vh;
-    border:2px solid blue;
+.mainDiv {
+  min-height: 30vh;
+  border: 2px solid blue;
+  
 
-    .leftDiv{
-        height:30vh;
+  .leftDiv {
+    height: 48vh;
+  }
+
+  .rightDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 3vw;
     }
 
-    .rightDiv{
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
+    p {
+      font-size: 1.6vw;
+      font-style: normal;
+      text-align: center;
     }
+  }
 }
